@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#c3c0ff",
+          "error": "#ba1a1a",
+          "surface": "#f8f9ff",
+          "inverse-on-surface": "#eaf1ff",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed": "#001f26",
+          "on-error-container": "#93000a",
+          "on-primary-container": "#dad7ff",
+          "on-primary-fixed-variant": "#3323cc",
+          "surface-container-low": "#eff4ff",
+          "on-background": "#0b1c30",
+          "on-tertiary-container": "#93e8ff",
+          "on-surface-variant": "#464555",
+          "on-secondary-fixed-variant": "#003ea8",
+          "primary": "#3525cd",
+          "secondary-fixed-dim": "#b4c5ff",
+          "error-container": "#ffdad6",
+          "secondary-container": "#316bf3",
+          "outline": "#777587",
+          "on-secondary-container": "#fefcff",
+          "secondary-fixed": "#dbe1ff",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#acedff",
+          "on-surface": "#0b1c30",
+          "on-primary-fixed": "#0f0069",
+          "outline-variant": "#c7c4d8",
+          "surface-bright": "#f8f9ff",
+          "surface-container-highest": "#d3e4fe",
+          "surface-variant": "#d3e4fe",
+          "primary-fixed": "#e2dfff",
+          "tertiary-container": "#006a7c",
+          "on-secondary-fixed": "#00174b",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "inverse-primary": "#c3c0ff",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#4f46e5",
+          "surface-container-high": "#dce9ff",
+          "surface-container": "#e5eeff",
+          "inverse-surface": "#213145",
+          "surface-tint": "#4d44e3",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "secondary": "#0051d5",
+          "on-primary": "#ffffff",
+          "surface-dim": "#cbdbf5",
+          "background": "#f8f9ff",
+          "tertiary": "#00505f"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "margin": "3rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem"
+        },
+        "fontFamily": {
+          "display-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script><title>Zovio – Build a chatbot for your client in 5 minutes</title><link rel="icon" href="logo.png"><style>
+.zhero{position:relative;min-height:100vh;min-height:100svh;background:#000 url(poster.jpg) 70% center/cover;color:#fff;overflow:hidden;display:flex;align-items:center;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+.zhero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;transform:scale(var(--s,1))}
+.zhero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.85) 30%,rgba(0,0,0,0) 62%)}
+.znav{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw}
+.zchip{background:#fff;border-radius:14px;padding:6px 14px;display:flex}.zchip img{height:34px}
+.zpill{font-size:13px;font-weight:700;padding:8px 14px;border:1px solid rgba(255,255,255,.35);border-radius:99px;color:#fff;text-decoration:none}
+.zcopy{position:relative;z-index:2;padding:120px 5vw 80px;max-width:760px;opacity:var(--o,1);transform:translateY(var(--y,0))}
+.ztag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c3c0ff;margin-bottom:18px}
+.zcopy h1{font-size:clamp(36px,6vw,68px);line-height:1.05;letter-spacing:-.03em;font-weight:800}.zcopy h1 span{color:#8b86ff}
+.zsub{font-size:clamp(16px,2vw,20px);line-height:1.6;color:#c9cfdc;margin:22px 0 30px;max-width:560px}
+.zbtn{display:inline-block;background:#4f46e5;color:#fff;font-weight:700;font-size:16px;padding:16px 30px;border-radius:14px;text-decoration:none;box-shadow:0 10px 30px rgba(79,70,229,.4);transition:.2s}.zbtn:hover{transform:translateY(-2px);background:#4338ca}
+.znote{margin-top:18px;font-size:14px;color:#aeb6c7}
+.zfade{height:46vh;background:linear-gradient(180deg,#000 0%,#05070d 12%,#161b2b 32%,#6b7287 58%,#dfe5f5 84%,#f8f9ff 100%)}
+@media(max-width:700px){.zhero:after{background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85))}.zcopy{padding-top:110px}}
+</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="zhero" id="ztop"><video autoplay muted loop playsinline preload="auto" poster="poster.jpg"><source src="hero.mp4" type="video/mp4"></video>
+<div class="znav"><div class="zchip"><img src="logo.png" alt="Zovio"></div><a class="zpill" href="#early-access">Early access</a></div>
+<div class="zcopy" id="zcopy"><span class="ztag">Built for freelancers &amp; small agencies</span>
+<h1>Build a chatbot for your client in 5 minutes. <span>No coding.</span></h1>
+<p class="zsub">Describe the business in a simple chat. Get a shareable bot link and a dashboard where your client sees every conversation, even the ones at midnight.</p>
+<a class="zbtn" href="#early-access">Reserve my free spot</a>
+<p class="znote">Early access opens on 20 December. First 50 members get their first month free.</p></div></header><div class="zfade"></div><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO & VISUAL MOCKUP -->
+<section class="relative w-full max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter pt-8 sm:pt-14 pb-16 lg:pb-24">
+<!-- Atmospheric background light blooms -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[600px] h-[320px] bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-[380px] h-[280px] bg-secondary-container/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="text-center max-w-2xl mx-auto"><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">PRODUCT PREVIEW</span><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2">What you and your client will see</h2><p class="text-on-surface-variant mt-3">Concept preview with sample data. Early access is in progress.</p></div>
+<!-- Polished Dual Mockup Arena -->
+<div class="mt-12 sm:mt-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left side: Interactive Phone / Live Widget Preview (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-5 sm:p-6 shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-4 mb-4 bg-surface-container-low -mx-5 -mt-5 sm:-mx-6 sm:-mt-6 p-4 rounded-t-2xl">
+<div class="flex items-center gap-2.5">
+<div class="w-3 h-3 rounded-full bg-error/70"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant ml-2 uppercase tracking-wide">Client Demo Widget</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Concept Preview
+            </span>
+</div>
+<!-- Phone mockup header -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl mb-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shadow-sm">
+<span class="material-symbols-outlined text-[20px]">local_cafe</span>
+</div>
+<div class="text-left">
+<div class="font-label-lg text-label-lg text-on-surface leading-tight font-semibold">Brew &amp; Bloom Café, Pune</div>
+<div class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sample client
+              </div>
+</div>
+</div>
+<!-- Chat messages -->
+<div class="space-y-3.5 my-3">
+<div class="flex justify-end">
+<div class="max-w-[85%] bg-primary-container text-on-primary rounded-2xl rounded-tr-xs p-3.5 text-left shadow-sm">
+<p class="font-body-md text-body-md text-on-primary leading-snug">Kal Sunday ko open ho? 4 logon ka table book karna hai.</p>
+<span class="font-label-caps text-[10px] text-on-primary/75 mt-1 block text-right">12:13 AM · Delivered</span>
+</div>
+</div>
+<div class="flex justify-start items-start gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</div>
+<div class="max-w-[85%] bg-surface-container-low text-on-surface rounded-2xl rounded-tl-xs p-3.5 text-left shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-snug">Haan ji, kal 9 AM se 11 PM tak open hain! Kitne baje aana chahenge?</p>
+<span class="font-label-caps text-[10px] text-on-surface-variant mt-1 block">12:14 AM · Instant Reply</span>
+</div>
+</div>
+<div class="flex justify-end">
+<div class="max-w-[85%] bg-primary-container text-on-primary rounded-2xl rounded-tr-xs p-3.5 text-left shadow-sm">
+<p class="font-body-md text-body-md text-on-primary leading-snug">7:30 PM ka rakh dijiye, naam Rohan Deshmukh.</p>
+<span class="font-label-caps text-[10px] text-on-primary/75 mt-1 block text-right">12:14 AM · Customer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-3 mt-4 bg-surface-container-lowest">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-xl">
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface-variant placeholder:text-outline outline-none cursor-not-allowed" disabled="" placeholder="Type a client inquiry..." type="text"/>
+<button class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right side: Agency / Client Conversation Dashboard (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-5 sm:p-6 shadow-xl flex flex-col justify-between">
+<div>
+<!-- Dashboard Top Bar -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 bg-surface-container-low -mx-5 -mt-5 sm:-mx-6 sm:-mt-6 p-4 rounded-t-2xl">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+</div>
+<div class="text-left">
+<div class="font-label-lg text-label-lg font-bold text-on-surface">Client Live Stream: Brew &amp; Bloom Café</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">Client Status: <span class="text-secondary font-bold">Active &amp; Monitoring</span></div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-semibold">28 midnight chats resolved</span>
+</div>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-3 gap-3 mb-5 text-left">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="font-label-caps text-label-caps text-on-surface-variant">New Leads</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">14</div>
+<div class="font-body-sm text-[11px] text-secondary font-medium">↑ 100% after 11 PM</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="font-label-caps text-label-caps text-on-surface-variant">Response Time</div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary mt-0.5">1.2s</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Fully Autonomous</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<div class="font-label-caps text-label-caps text-on-surface-variant">Client Portal</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">Live</div>
+<div class="font-body-sm text-[11px] text-secondary">Lead alerts</div>
+</div>
+</div>
+<!-- Live Feed Rows -->
+<div class="space-y-2.5 text-left">
+<div class="p-3 rounded-xl bg-primary-fixed/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<div>
+<span class="font-label-caps text-label-caps font-bold text-on-surface block sm:inline">12:14 AM - Lead Captured</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm sm:ml-2">Table booking for 4 (Phone captured)</span>
+</div>
+</div>
+<span class="self-start sm:self-auto font-label-caps text-[11px] px-2 py-0.5 rounded-full bg-primary-container text-on-primary">Hot Lead</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant shrink-0"></span>
+<div>
+<span class="font-label-caps text-label-caps font-bold text-on-surface block sm:inline">11:42 PM - Menu Question</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm sm:ml-2">Veg and Jain options shared</span>
+</div>
+</div>
+<span class="self-start sm:self-auto font-label-caps text-[11px] px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface">Resolved</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant shrink-0"></span>
+<div>
+<span class="font-label-caps text-label-caps font-bold text-on-surface block sm:inline">10:15 PM - Party Enquiry</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm sm:ml-2">Birthday booking estimate shared</span>
+</div>
+</div>
+<span class="self-start sm:self-auto font-label-caps text-[11px] px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface">Booked</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span>Sample client portal</span>
+<span class="text-primary font-semibold">One-Click Client Login →</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE PROBLEM (Pain Points) -->
+<section class="w-full bg-surface-container-low py-16 lg:py-24">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-caps text-label-caps text-error tracking-widest uppercase font-bold">THE OLD WAY</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2">
+          Building client chatbots shouldn't drain your agency hours.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pain Point 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-3">Complex Builders</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Spending 3 days configuring complex bot builders and prompt chains for a simple local cafe or dentist.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-caps text-label-caps text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">close</span> High setup overhead
+          </div>
+</div>
+<!-- Pain Point 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">visibility_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-3">Zero Transparency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Clients constantly asking "Is this bot actually working?" because they can't see the conversations.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-caps text-label-caps text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">close</span> Constant client friction
+          </div>
+</div>
+<!-- Pain Point 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-3">Margin Bleed</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Losing margin on per-message API bills and rebuilding the same customer service workflows from scratch.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-caps text-label-caps text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">close</span> Unpredictable bills
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: HOW IT WORKS (Three numbered steps) -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter py-16 lg:py-24">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">STREAMLINED PROCESS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2">
+        From intake to live client link in 3 steps
+      </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+</div>
+<div class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider mb-2">Step 01</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+          1. Describe the business in chat
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Chat for a couple of minutes about their services, prices, business hours and FAQs.
+        </p>
+<div class="mt-6 pt-6 bg-surface-container-low -mx-8 -mb-8 p-4 rounded-b-2xl">
+<span class="font-label-caps text-[11px] text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">auto_awesome</span> Set up with a simple Q&amp;A
+          </span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[26px]">rocket_launch</span>
+</div>
+<div class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider mb-2">Step 02</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+          2. Get your bot and shareable link
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Generate a branded demo link instantly to test and show your client before embedding.
+        </p>
+<div class="mt-6 pt-6 bg-surface-container-low -mx-8 -mb-8 p-4 rounded-b-2xl">
+<span class="font-label-caps text-[11px] text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">share</span> Send preview link via WhatsApp or email
+          </span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[26px]">monitoring</span>
+</div>
+<div class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider mb-2">Step 03</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+          3. Your client watches every conversation in a dashboard
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Give your client their own simple login where they can read midnight chats and follow up with hot leads.
+        </p>
+<div class="mt-6 pt-6 bg-surface-container-low -mx-8 -mb-8 p-4 rounded-b-2xl">
+<span class="font-label-caps text-[11px] text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span> Retain clients with daily tangible ROI
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: DASHBOARD HIGHLIGHT -->
+<section class="w-full bg-surface-container-low py-16 lg:py-24">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter text-center">
+<div class="max-w-3xl mx-auto mb-10">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">CLIENT EXPERIENCE FIRST</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2 mb-3">
+          The view that sells the retainer for you.
+        </h2>
+<!-- Caption Prominently Placed -->
+<p class="font-headline-sm text-headline-sm text-primary-container font-semibold italic">
+          "Clients don't care how the bot was built. They care what customers asked at midnight."
+        </p>
+</div>
+<!-- Large High-Fidelity Mockup of Conversation Dashboard -->
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden text-left">
+<!-- Mockup top menu -->
+<div class="p-4 sm:p-5 bg-surface-container flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
+<div class="w-3 h-3 rounded-full bg-primary-fixed"></div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-2">Sharma Dental Clinic, Pune — Dashboard preview</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-caps text-label-caps font-bold flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Sample data
+            </span>
+</div>
+</div>
+<!-- Filter bar -->
+<div class="px-5 py-3 bg-surface-container-low flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest font-label-caps text-label-caps text-on-surface font-bold shadow-xs">All Conversations (48)</span>
+<span class="px-3 py-1 rounded-lg text-on-surface-variant font-label-caps text-label-caps">Midnight Inquiries (19)</span>
+<span class="px-3 py-1 rounded-lg text-on-surface-variant font-label-caps text-label-caps">High Intent Leads (12)</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Showing latest activity</span>
+</div>
+<!-- Timeline Items -->
+<div class="p-5 sm:p-6 space-y-4">
+<!-- Timeline Card 1: 2:15 AM -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-caps text-label-caps font-bold">2:15 AM</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Toothache at Night</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary-container font-label-caps text-[11px] font-semibold">Urgent Sentiment</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-[12px] shadow-xs">
+                  📞 +91 98XXX 43201
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[11px]">Appointment Offered</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "Doctor, raat se daad mein bahut dard hai. Kal subah koi slot milega?" — <span class="text-on-surface font-medium">Bot offered a 9:00 AM slot and shared the clinic address.</span>
+</p>
+</div>
+<!-- Timeline Card 2: 12:08 AM -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-caps text-label-caps font-bold">12:08 AM</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Smile Makeover Enquiry</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-caps text-[11px] font-semibold">High Ticket Inquiry</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-[12px] shadow-xs">
+                  📞 +91 97XXX 12345
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-caps text-[11px]">Consultation Booked</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "Meri shaadi February mein hai. Smile makeover ka kitna kharcha aayega?" — <span class="text-on-surface font-medium">Bot asked about the budget, captured the WhatsApp number and shared sample cases.</span>
+</p>
+</div>
+<!-- Timeline Card 3: 11:42 PM -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-caps text-label-caps font-bold">11:42 PM</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Payment Options</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-[11px]">Neutral Sentiment</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-[12px] shadow-xs">
+                  📞 +91 99XXX 88140
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-caps text-[11px]">Instant Answered</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "Kya aap UPI aur EMI dono accept karte ho?" — <span class="text-on-surface font-medium">Bot confirmed UPI and EMI options and shared the booking link.</span>
+</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">✨ Client reads this dashboard during morning coffee. You look like an indispensable partner.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: PRICING HINT -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter py-16 lg:py-24">
+<div class="max-w-2xl mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-8 sm:p-12 shadow-xl text-center relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<span class="px-3.5 py-1 rounded-full bg-primary-fixed text-primary font-label-caps text-label-caps uppercase font-bold tracking-wider mb-4 inline-block">
+          Predictable Agency Economics
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2 mb-3">
+          Flat price per client, no per-chat billing.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
+          No surprise token invoices or complex seat tiers. You set what you charge your client.
+        </p>
+<div class="p-6 rounded-2xl bg-surface-container-low max-w-lg mx-auto">
+<div class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider mb-1">Founding Member Tier</div>
+<div class="flex items-baseline justify-center gap-2 mb-2">
+<span class="font-display text-[34px] sm:text-[42px] font-extrabold text-on-surface leading-none">First month free</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">for the first 50 members</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">
+            Founding members also get a locked early price, shared at launch.
+</p>
+<div class="mt-4 pt-4 bg-surface-container-high/60 -mx-6 -mb-6 p-3 rounded-b-2xl">
+<span class="font-label-caps text-[11px] text-on-surface font-semibold">Shareable bot link · Client dashboard · Hinglish support</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: SIGN-UP FORM -->
+<section class="w-full bg-surface-container-low py-16 lg:py-24" id="early-access">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="max-w-xl mx-auto bg-surface-container-lowest p-8 sm:p-10 rounded-2xl shadow-xl">
+<div class="text-center mb-8">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest font-bold">LIMITED COHORT</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">Claim Your Founding Access</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Get your first client bot live on launch day.</p>
+</div>
+<form id="zf" class="space-y-4" novalidate><input type="text" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface font-semibold mb-1.5" for="name">Name</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(79,70,229,0.3)] transition-all outline-none" id="name" placeholder="Your full name" required="" type="text"/>
+</div>
+<!-- Field 2: WhatsApp or Email -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface font-semibold mb-1.5" for="contact">WhatsApp number or email</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(79,70,229,0.3)] transition-all outline-none" id="contact" placeholder="WhatsApp number or work email" required="" type="text"/>
+</div>
+<!-- Field 3: Dropdown -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface font-semibold mb-1.5" for="role">Do you build chatbots for clients?</label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(79,70,229,0.3)] transition-all outline-none cursor-pointer" id="role" required="">
+<option value="Yes">Yes</option>
+<option value="Planning to">Planning to</option>
+<option value="No">No</option>
+</select>
+</div>
+<!-- CTA Button -->
+<button class="w-full h-12 mt-2 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 cursor-pointer" type="submit">
+            Reserve my free spot
+          </button>
+<!-- Micro-copy -->
+<div class="text-center pt-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+              No credit card required. <span class="text-primary font-bold">First 50 members get their first month free.</span>
+</p>
+</div>
+<!-- Success banner -->
+<div class="hidden p-3 rounded-xl bg-surface-container text-primary font-label-md text-label-md text-center mt-3" id="signup-feedback">
+            🎉 Spot reserved! We’ll message you before early access opens on 20 December.
+          </div>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 8: FAQ (4 Accordions) -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter py-16 lg:py-24">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">QUESTIONS &amp; ANSWERS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2">
+        Everything you need to know
+      </h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-3.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer open:bg-surface-container-low transition-colors">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface font-semibold list-none select-none">
+<span>Is it live?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+          Not yet. Zovio is being built in public, and early access opens on 20 December. We’re opening to a first cohort of 50 agencies and freelancers.
+        </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer open:bg-surface-container-low transition-colors">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface font-semibold list-none select-none">
+<span>Do I need to code?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+          No. If you can type in WhatsApp or write an email, you can deploy a full client chatbot in under 5 minutes.
+        </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer open:bg-surface-container-low transition-colors">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface font-semibold list-none select-none">
+<span>How much will it cost?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+          A flat price per client with no per-chat surprises. Founding members get their first month free and a locked early price.
+        </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer open:bg-surface-container-low transition-colors">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface font-semibold list-none select-none">
+<span>Which languages does it support?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+          English and Hinglish to start.
+        </p>
+</details>
+</div>
+</section>
+<!-- SECTION 9: MINIMAL FOOTER -->
+<footer class="w-full bg-surface-container-lowest py-10 mt-6 shadow-[0_-1px_6px_rgba(15,23,42,0.02)]">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+        © 2026 Zovio. Built for creators and agencies.
+      </div>
+<div>
+<a class="font-body-sm text-body-sm text-primary hover:underline font-semibold" href="https://instagram.com/prxwlll" rel="noopener">Questions? DM on Instagram</a>
+</div>
+</div>
+</footer>
+</div></main><script>
+const ACCESS_KEY="PASTE_WEB3FORMS_KEY_HERE";
+const hero=document.getElementById('ztop'),cp=document.getElementById('zcopy');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let t=0;addEventListener('scroll',()=>{if(t)return;t=requestAnimationFrame(()=>{t=0;const p=Math.min(scrollY/(hero.offsetHeight*.8),1);cp.style.setProperty('--o',1-p);cp.style.setProperty('--y',(-p*60)+'px');hero.style.setProperty('--s',1+p*.08)})},{passive:true})}
+const f=document.getElementById('zf'),fb=document.getElementById('signup-feedback'),sb=f.querySelector('button[type=submit]'),ok=fb.textContent.trim();
+const say=(t,good)=>{fb.textContent=t;fb.classList.remove('hidden');fb.style.color=good?'':'#b42318'};
+f.addEventListener('submit',async e=>{e.preventDefault();
+const n=f.querySelector('#name').value.trim(),c=f.querySelector('#contact').value.trim(),q=f.querySelector('#role').value;
+if(!n||!c){say('Please add your name and WhatsApp or email.',false);return}
+if(f.botcheck.value)return;
+sb.disabled=true;const old=sb.textContent;sb.textContent='Reserving…';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:ACCESS_KEY,subject:'New Zovio early-access signup',from_name:'Zovio landing page',name:n,contact:c,builds_chatbots:q})});
+const j=await r.json();if(!j.success)throw 0;f.reset();say(ok,true)}
+catch(_){say('Couldn’t save that. Please DM us on Instagram: @prxwlll',false)}
+sb.disabled=false;sb.textContent=old});
+</script></body></html>
